@@ -1,0 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 20vh; /* ou selon ton navbar height */
+}
