@@ -15,6 +15,28 @@
   background-color: #121212;
   color: bisque;
 }
+.navbar-collapse {
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease;
+  max-height: 0;
+  opacity: 0;
+   display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.navbar-collapse.open  {
+  display: block; /* ou inline-block si tu préfères */
+  max-height: 500px; /* Ajuste selon la taille de ton menu */
+  opacity: 1;
+}
+
+.navbar-collapse.closed {
+  max-height: 0;
+  opacity: 0;
+}
+
 body {
   transition: background-color 0.3s, color 0.3s;
   font-family: sans-serif;
@@ -55,6 +77,9 @@ font-family: 'Courier New', Courier, monospace;
 .dark-theme {
   background-color: #1e1e1e;
   color: #eee;
+}
+.navbar-collapse-space {
+  margin-left: 40%; /* ou la valeur qui te convient */
 }
 
 nav {

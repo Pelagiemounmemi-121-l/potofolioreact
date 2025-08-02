@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 const Navbar: React.FC = () => {
     
 
+const [isNavOpen, setIsNavOpen] = useState(false);
 
  const [activeSection, setActiveSection] = useState<string>("");
 
@@ -44,7 +45,7 @@ const Navbar: React.FC = () => {
 <nav className={`navbar navbar-expand-lg navbar-dark bg-dark fade-in fixed-top shadow-sm w-100`} style={{marginBottom:'100px'}}>
 
 
-      <div className="container-fluid">
+      <div className="container-fluid  ms-auto">
          
        
         <NavLink className="navbar-brand" to="/"> <span className="span">p</span>elagie</NavLink>
@@ -52,41 +53,39 @@ const Navbar: React.FC = () => {
         {isDarkMode ? "☀️ Mode Clair" : "🌙 Mode Sombre"}
       </button>
         <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto " >
-           
-            <li className="nav-item d-flex">
-  <a href="/#home" className={`nav-link ${activeSection === 'home' ? 'active' : ''}`}>
+  className="navbar-toggler"
+  type="button"
+  onClick={() => setIsNavOpen(prev => !prev)}
+>
+  <span className="navbar-toggler-icon" />
+</button>
+
+    <div
+  className={`navbar-collapse  ${isNavOpen ? 'open' : 'closed'} navbar-collapse-space`}
+  id="navbarNav"
+>
+ 
+
+             
+          
+  <a href="/#home" className={`nav-link me-3 ${activeSection === 'home' ? 'active' : ''}`}>
     Accueil
   </a>
-  <a href="/#about" className={`nav-link ${activeSection === 'about' ? 'active' : ''}`}>
+  <a href="/#about" className={`nav-link me-3 ${activeSection === 'about' ? 'active' : ''}`}>
     Apropos
   </a>
-  <a href="/#project" className={`nav-link ${activeSection === 'project' ? 'active' : ''}`}>
+  <a href="/#project" className={`nav-link me-3 ${activeSection === 'project' ? 'active' : ''}`}>
     projects
   </a>
-  <a href="/#comp" className={`nav-link ${activeSection === 'comp' ? 'active' : ''}`}>
+  <a href="/#comp" className={`nav-link me-3 ${activeSection === 'comp' ? 'active' : ''}`}>
     competences
   </a>
 
-  <a href="/#contact" className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`}>
+  <a href="/#contact" className={`nav-link me-3 ${activeSection === 'contact' ? 'active' : ''}`}>
     contacts
   </a>
-</li>
+  
 
-
-            
-          </ul>
         </div>
       </div>
     </nav>
