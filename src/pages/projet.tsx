@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './Home.css'
 
 const Projects: React.FC = () => {
   useEffect(() => {
@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
     {
       title: "Portfolio Personnel",
       description: "Site web moderne en React + TypeScript avec thème sombre et responsive design.",
-      link: "#",
+      link: "https://pelagie.netlify.app/",
     },
     {
       title: "Application de ToDo",
@@ -26,11 +26,15 @@ const Projects: React.FC = () => {
       link: "#",
     },
   ];
+  
+
+
+
 
   return (
     <section id='project'>
     <div className="container mt-5 " >
-      <h1 className="text-center mb-4" data-aos="fade-down"  > <span style={{color: 'aqua'}}>Mes</span> Projets 🚀</h1>
+      <h1 className="text-center mb-4" data-aos="fade-down"  > <span >Mes</span> Projets 🚀</h1>
 
       <div className="row" >
         

@@ -4,7 +4,7 @@ import App from './App';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'aos/dist/aos.css';
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import 'aos/dist/aos.css';
 import './index.css';
@@ -13,8 +13,8 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <App />
-     </HashRouter>
+     </BrowserRouter>
   </React.StrictMode>
 );

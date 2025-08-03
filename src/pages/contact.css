@@ -1,0 +1,14 @@
+.formcontaint{ min-height: 100vh; margin-top: 8%; }
+form {
+    
+    border: 1px solid aqua;
+   
+
+} 
+span{
+    color: aqua;
+}
+.btn{
+
+ background-color: aqua;  
+}

@@ -1,10 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaFacebookF, FaTwitter, FaWhatsapp } from 'react-icons/fa';
-
+import './footer.css'
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-dark text-white py-4 mt-5 w-100" style={{margin: 'auto', width: '100%' }}>
+    <footer className="bg-dark text-white py-4 mt-5 w-100" >
 
       <div className="container-fluid text-center w-100">
         <p className="mb-3">© {new Date().getFullYear()} MonPortfolio | Tous droits réservés</p>

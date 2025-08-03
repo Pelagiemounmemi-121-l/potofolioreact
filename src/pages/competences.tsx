@@ -4,9 +4,11 @@ import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler,
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import './competences.css'
 ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
 
 function CompetencesPage() {
+
     useEffect(() => {
         AOS.init({ duration: 1000 });
       }, []);
@@ -24,8 +26,7 @@ function CompetencesPage() {
       },
     ],
   };
-
-  const options = {
+const options = {
     scales: {
       r: {
         min: 0,
@@ -52,12 +53,13 @@ function CompetencesPage() {
       },
     },
   };
+  
 
   return (
     <section  id='comp'>
-    <div className="container py-5 " style={{ marginTop: '15%'}}  >
-      <h1 className="text-center mb-4 " > <span style={{color: 'aqua'}} >🧠 Mes</span> Compétences Front-End</h1>
-      <div style={{ position: 'relative', width: '100%', height: '90vh' }} data-aos="zoom-in-up">
+    <div className="container py-5 "   >
+      <h1 className="text-center mb-4 " > <span  >🧠 Mes</span> Compétences Front-End</h1>
+      <div  data-aos="zoom-in-up" className='radar'>
   <Radar data={data} options={{ maintainAspectRatio: false }} />
 </div>
 

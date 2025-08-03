@@ -5,7 +5,7 @@ import "./Navbar.css";
 import  { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { useEffect, useState } from "react";
-
+import logo from '../assets/54b1c8043ad148bfa07fd462e52c2b1e-free.png';
 
 
 
@@ -42,13 +42,13 @@ const [isNavOpen, setIsNavOpen] = useState(false);
   return (
     
       
-<nav className={`navbar navbar-expand-lg navbar-dark bg-dark fade-in fixed-top shadow-sm w-100`} style={{marginBottom:'100px'}}>
+<nav className={`navbar navbar-expand-lg navbar-dark bg-dark fade-in fixed-top shadow-sm `} >
 
 
       <div className="container-fluid  ms-auto">
          
        
-        <NavLink className="navbar-brand" to="/"> <span className="span">p</span>elagie</NavLink>
+        <NavLink className="navbar-brand" to="/"> <img src={logo} alt="logo" width={100} height={100} className="logo"/></NavLink>
          <button onClick={toggleTheme} className="btnchange">
         {isDarkMode ? "☀️ Mode Clair" : "🌙 Mode Sombre"}
       </button>
@@ -94,4 +94,3 @@ const [isNavOpen, setIsNavOpen] = useState(false);
 };
 
 export default Navbar;
-

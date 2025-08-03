@@ -1,0 +1,23 @@
+span{
+
+    color: aqua;
+}
+.content{
+
+      border-radius: 2px solid aqua ;
+}
+p{
+    font-size: 24px;
+}
+.rowcont{
+    margin-top: 60px;
+}
+.plus{
+
+       border-radius: 30px; font-size:20px; background-color:aqua; color: black; text-decoration:none  ;
+}
+.float-container{
+border-right: 1px solid aqua;
+
+
+}
