@@ -17,7 +17,7 @@ function AboutMe() {
       <div className="row p-4"  >
         {/* Colonne gauche - Texte */}
         <h1 className="text-center mb-4 fs-1"   data-aos="fade-down"> <span >À </span> propos de moi</h1>
-            <div className="col-md-6 d-flex justify-content-center align-items-center content  "  data-aos="fade-right">
+            <div className="col-md-6 col-12 d-flex justify-content-center align-items-center content  "  data-aos="fade-right">
       <div className="float-container ">
       <img src={cloud} alt="Nuage flottant" className="float-image" />
     </div> 
@@ -25,7 +25,7 @@ function AboutMe() {
 
         {/* Colonne droite - Image */}
          
-           <div className="col-md-6 mt-4 p-4" data-aos="fade-left"  >
+           <div className="col-md-6 mt-4 p-4 col-12" data-aos="fade-left"  >
 
            <p >
             Bonjour ! Je suis un développeur front-end passionné par le design interactif
@@ -37,8 +37,8 @@ function AboutMe() {
             J’aime aussi explorer les nouvelles tendances web et relever des défis créatifs.
           </p>
              <div className='row rowcont' >
-                <div className="col-md-6"></div>
-                 <div className="col-md-6"> <a className='p-2 plus'
+                <div className="col-md-6 col-12"></div>
+                 <div className="col-md-6 col-12"> <a className='p-2 plus'
                   href="/documents/cvdevpelagie.pdf" // Chemin relatif vers le fichier .doc
                
                 >

@@ -4,3 +4,9 @@ html {
 section {
   scroll-margin-top: 20vh; /* ou selon ton navbar height */
 }
+
+@media (max-width: 768px) {
+  body{
+    width: 100%;
+  }
+}

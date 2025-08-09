@@ -6,6 +6,8 @@ import { FaEnvelope } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'aos/dist/aos.css';
 import './contact.css'
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 interface FormData {
   name: string;
   email: string;
@@ -61,13 +63,13 @@ const ContactForm = () => {
   return (
     <section id="contact">
       <div
-        className="d-flex justify-content-center align-items-start formcontaint"
+        className="d-flex justify-content-center align-items-start formucontaint"
        
       >
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="p-4 rounded shadow w-50 "
+          className="p-4 rounded shadow contact-form "
           data-aos="fade-up"
           
         >
@@ -106,6 +108,24 @@ const ContactForm = () => {
           )}
         </form>
       </div>
+  
+<section className="container my-5" id="infos-contact" data-aos="fade-up">
+  <h2 className="text-center mb-4">Nos coordonnées</h2>
+  <div className="row text-center">
+    <div className="col-md-4">
+      <i className="bi bi-envelope" ></i>
+      <p className="mt-2">pelagimounmemi@gmail.com</p>
+    </div>
+    <div className="col-md-4">
+      <i className="bi bi-telephone" ></i>
+      <p className="mt-2">+237 6 90 316 908</p>
+    </div>
+    <div className="col-md-4">
+      <i className="bi bi-geo-alt" ></i>
+      <p className="mt-2">Douala, Cameroun</p>
+    </div>
+  </div>
+</section>
     </section>
   );
 };

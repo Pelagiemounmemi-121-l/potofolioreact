@@ -110,3 +110,33 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
 }
+@media (max-width: 768px) {
+ 
+  .nom span {
+    font-size: 1.5rem;
+  }
+
+  .cv {
+    font-size: 0.9rem;
+  }
+
+  .floating-image {
+    width: 100%;
+    max-width: 200px;
+    
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .lien {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .moncv {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}

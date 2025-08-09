@@ -66,11 +66,10 @@ const [isNavOpen, setIsNavOpen] = useState(false);
 >
  
 
-             
-          
-  <a href="/#home" className={`nav-link me-3 ${activeSection === 'home' ? 'active' : ''}`}>
+     <a href="/#home" className={`nav-link me-3 ${activeSection === 'home' ? 'active' : ''}`}>
     Accueil
   </a>
+   
   <a href="/#about" className={`nav-link me-3 ${activeSection === 'about' ? 'active' : ''}`}>
     Apropos
   </a>

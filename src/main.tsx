@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import { BrowserRouter } from "react-router-dom";
 
 import 'aos/dist/aos.css';
-import './index.css';
+
 
 
 

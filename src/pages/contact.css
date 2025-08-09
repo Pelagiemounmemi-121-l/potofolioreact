@@ -12,3 +12,51 @@ span{
 
  background-color: aqua;  
 }
+i{
+    font-size: 3rem;
+    color: aqua;
+}
+/* contact.css */
+
+/* Par défaut (desktop) */
+.contact-form {
+  width: 50%;
+  
+}
+
+/* Conteneur */
+.formucontaint {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 2rem;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .contact-form {
+    width: 100%;
+    margin: 0 1rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .formcontaint {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .alert {
+    font-size: 0.9rem;
+  }
+}

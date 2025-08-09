@@ -21,3 +21,14 @@ border-right: 1px solid aqua;
 
 
 }
+@media (max-width: 768px){
+.float-image {
+    width: 100%;
+    max-width: 200px;
+    
+  }
+p{
+    font-size: 1rem;
+}
+
+}

@@ -10,15 +10,19 @@ import { FaDownload, FaRegHandPeace, FaFacebookF, FaTwitter, FaWhatsapp } from '
 import MultiTypewriter from '../components/Typewriter';
 
 const Home: React.FC = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1200 });
-  }, []);
+ 
+useEffect(() => {
+  AOS.init({
+    duration: 1200,
+    disable: window.innerWidth < 768 // désactive AOS sur mobile si besoin
+  });
+}, []);
 
   return (
     <div className="home-container fade-in w-100">
       <section id="home">
         <div className="row w-100 ms-4" >
-          <div className="col-md-6 p-4 mt-4">
+          <div className="col-md-6 p-4 mt-4 col-12">
             <div>
               <h1
                 
@@ -84,9 +88,9 @@ const Home: React.FC = () => {
             </div>
           </div>
 
-          <div className="col-md-6" data-aos="zoom-in-up">
+          <div className="col-md-6 col-12" data-aos="zoom-in-up">
             <div className="floating-container">
-              <img src={cloud} alt="Nuage flottant" className="floating-image" />
+              <img src={cloud} alt="Nuage flottant" className="floating-image " />
             </div>
           </div>
         </div>
